@@ -17,7 +17,6 @@
   --depart-blur-color: #41006a12;
   --patient-color: #530485e0;
   --patient-light-color: #d9cce1;
-  --donation-button-color: #cbcbcb;
   --text-color: #612b83;
   --blur-color: #00000075;
 }
@@ -89,7 +88,7 @@ nav ul li a:hover {
 
 main {
   width: 100%;
-  /* height: 150em; */
+  height: 210em;
 }
 
 main .hero-section {
@@ -179,6 +178,7 @@ main .patient-section {
   width: 100%;
   margin-top: 10%;
   padding: 0 3%;
+  margin-bottom: 8%;
 }
 
 .patient-section .header {
@@ -264,6 +264,64 @@ main .patient-section {
   color: var(--patient-color);
 }
 
+main .patient-record {
+  background: var(--depart-color);
+  width: 100%;
+  height: 486px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.record {
+  width: 30%;
+  height: 272px;
+  font-size: 16px;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 0 40px;
+}
+
+.record h1 {
+  font-size: 96px;
+}
+
+.patient-record .img1 {
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.patient-record .img2 {
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+
+.patient-record .img3 {
+  position: absolute;
+  transform: rotate(25deg);
+  width: 200px;
+}
+
+.patient-record .img4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.patient-record .img5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .footer {
   padding: 50px 15% 10px;
   background: var(--text-color);
@@ -318,69 +376,4 @@ main .patient-section {
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
-}
-.donation_section {
-  padding: 164px 0;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-}
-.donation-content h3 {
-  color: var(--h1-color);
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 36px;
-  text-align: center;
-}
-.donation-content {
-  width: 100%;
-  max-width: 1027px;
-  margin: 0 auto;
-  display: flex;
-  gap: 70px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.donation_section img {
-  position: absolute;
-  z-index: -1;
-}
-
-.top-bg {
-  top: 0;
-  left: -4%;
-}
-.bottom-bg {
-  bottom: 0;
-  right: 0;
-}
-.donation_buttons {
-  display: grid;
-  width: 90%;
-  grid-template-rows: repeat(2, 80px);
-  grid-template-columns: repeat(auto-fit, 160px);
-  gap: 70px;
-  justify-items: start;
-  align-items: center;
-  justify-content: center;
-}
-.donation_buttons button {
-  background-color: var(--donation-button-color);
-  border: transparent;
-  padding: 28px 59px;
-  border-radius: 10px;
-  font-size: 24px;
-  font-weight: 700;
-}
-.donation_buttons button:active,
-.donation_buttons button:last-child {
-  background-color: var(--h1-color);
-  color: var(--white-color);
 }
