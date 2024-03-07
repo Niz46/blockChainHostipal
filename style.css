@@ -88,7 +88,7 @@ nav ul li a:hover {
 
 main {
   width: 100%;
-  height: 150em;
+  height: 210em;
 }
 
 main .hero-section {
@@ -178,6 +178,7 @@ main .patient-section {
   width: 100%;
   margin-top: 10%;
   padding: 0 3%;
+  margin-bottom: 8%;
 }
 
 .patient-section .header {
@@ -261,6 +262,65 @@ main .patient-section {
 
 .report-detail:hover{
   color: var(--patient-color);
+}
+
+main .patient-record{
+  background: var(--depart-color);
+  width: 100%;
+  height: 486px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.record{
+  width: 30%;
+  height: 272px;
+  font-size: 16px;
+  color: var(--white-color);  
+  border: 1px solid var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 0 40px;
+}
+
+.record h1{
+  font-size: 96px;
+}
+
+.patient-record .img1{
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.patient-record .img2{
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+
+.patient-record .img3 {
+  position: absolute;
+  transform: rotate(25deg);
+  width: 200px;
+}
+
+.patient-record .img4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.patient-record .img5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer {
