@@ -17,5 +17,363 @@
   --depart-blur-color: #41006a12;
   --patient-color: #530485e0;
   --patient-light-color: #d9cce1;
+  --donation-button-color: #cbcbcb;
+  --text-color: #612b83;
+  --blur-color: #00000075;
 }
 
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -10000;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  z-index: 1000000;
+}
+
+header.active {
+  background: var(--bg-color);
+}
+
+header span {
+  font-size: 36px;
+  color: var(--h1-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+nav ul li a {
+  margin: 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all ease-in-out 0.9s;
+}
+
+nav ul li a:hover {
+  color: var(--depart-color);
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.btn_container button {
+  padding: 10px 35px;
+  border-radius: 7px;
+  margin-left: 30px;
+  border: none;
+  background: var(--h1-color);
+  color: var(--white-color);
+}
+
+.btn_container button:nth-child(1) {
+  background: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--purple-color);
+}
+
+main {
+  width: 100%;
+  height: 150em;
+}
+
+main .hero-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 12%;
+  padding-left: 5%;
+  margin-bottom: 30%;
+}
+
+.hero-txt h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  color: var(--h1-color);
+}
+
+.hero-txt p {
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+.hero-txt button {
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 7px;
+  border: none;
+  background: var(--h1-color);
+  color: var(--white-color);
+}
+
+.hero-img {
+  position: relative;
+  margin-left: 11%;
+}
+
+.hero-img img:nth-child(2) {
+  width: 70%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+main .department-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.department-section .txt {
+  background: url("./Image/OUR\ DEPARTMENTS.svg");
+  width: 80%;
+  height: 100px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10000;
+}
+
+.txt h1 {
+  font-size: 70px;
+  color: var(--depart-color);
+}
+
+.department-section .img_container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 9%;
+  opacity: 0.8;
+  color: var(--blur-color);
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+main .patient-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10%;
+  padding: 0 3%;
+}
+
+.patient-section .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.txt-header span {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--patient-color);
+  margin-right: 20px;
+}
+
+.txt-header button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid var(--patient-color);
+  color: var(--patient-color);
+  cursor: pointer;
+}
+
+.img-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.patient-section .img-scroll {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 20px;
+  scroll-behavior: smooth;
+}
+
+.patient-section .img-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.patient-report {
+  width: 100%;
+  height: 35em;
+  margin-right: 40px;
+  background: #f5f5f5;
+  padding: 15px 15px;
+  border-radius: 20px;
+  color: var(--purple-color);
+  transition: all ease-in-out 0.9s;
+}
+
+.patient-report img {
+  margin-bottom: 20px;
+}
+
+.patient-report .txt {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.report-detail {
+  background: var(--patient-light-color);
+  width: 100%;
+  height: 25%;
+  margin-top: 40px;
+  padding: 10px;
+  line-height: 2.5;
+  border-radius: 9px;
+  transition: ease-in-out 1s;
+}
+
+.patient-report:hover {
+  background: var(--patient-color);
+  color: var(--white-color);
+}
+
+.report-detail:hover {
+  color: var(--patient-color);
+}
+
+.footer {
+  padding: 50px 15% 10px;
+  background: var(--text-color);
+  width: 100%;
+  color: var(--white-color);
+  margin-bottom: 0;
+}
+
+.footer .icons {
+  font-size: 19px;
+  font-weight: 400;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.footer .icons img {
+  width: 30px;
+  margin: 0 10px;
+  opacity: 0.6;
+}
+
+.footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.footer .row {
+  align-items: flex-start;
+  padding: 10px 0;
+  display: flex;
+}
+
+.footer .language-btn {
+  padding: 10px 20px;
+  background: transparent;
+  color: var(--white-color);
+  border-radius: 8px;
+  border: 1px solid var(--h1-color);
+}
+
+.copyright-text {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.donation_section {
+  height: 655px;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.donation-content h3 {
+  color: var(--h1-color);
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 36px;
+}
+.donation-content {
+  height: 327px;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.donation_section img {
+  position: absolute;
+  z-index: -1;
+}
+
+.top-bg {
+  top: 0;
+  left: -4%;
+}
+.bottom-bg {
+  bottom: 0;
+  right: 0;
+}
+.donation_buttons {
+  display: grid;
+  grid-template: repeat(2, 80px) / repeat(3, 1fr) 2fr;
+  gap: 70px;
+  justify-items: start;
+  align-items: center;
+}
+.donation_buttons button {
+  background-color: var(--donation-button-color);
+  border: transparent;
+  padding: 28px 59px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.donation_buttons button:active,
+.donation_buttons button:last-child {
+  background-color: var(--h1-color);
+  color: var(--white-color);
+}
