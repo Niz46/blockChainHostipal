@@ -260,11 +260,11 @@ main .patient-section {
   color: var(--white-color);
 }
 
-.report-detail:hover{
+.report-detail:hover {
   color: var(--patient-color);
 }
 
-main .patient-record{
+main .patient-record {
   background: var(--depart-color);
   width: 100%;
   height: 486px;
@@ -272,14 +272,13 @@ main .patient-record{
   align-items: center;
   justify-content: center;
   position: relative;
-
 }
 
-.record{
+.record {
   width: 30%;
   height: 272px;
   font-size: 16px;
-  color: var(--white-color);  
+  color: var(--white-color);
   border: 1px solid var(--white-color);
   display: flex;
   flex-direction: column;
@@ -289,17 +288,17 @@ main .patient-record{
   margin: 0 40px;
 }
 
-.record h1{
+.record h1 {
   font-size: 96px;
 }
 
-.patient-record .img1{
+.patient-record .img1 {
   position: absolute;
   top: 0;
   left: 0%;
 }
 
-.patient-record .img2{
+.patient-record .img2 {
   position: absolute;
   top: 0;
   right: 0%;
