@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 main {
   width: 100%;
-  height: 150em;
+  /* height: 150em; */
 }
 
 main .hero-section {
@@ -320,9 +320,10 @@ main .patient-section {
   margin-bottom: 10px;
 }
 .donation_section {
-  height: 655px;
+  padding: 164px 0;
   width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -334,9 +335,12 @@ main .patient-section {
   font-weight: 600;
   font-size: 42px;
   line-height: 36px;
+  text-align: center;
 }
 .donation-content {
-  height: 327px;
+  width: 100%;
+  max-width: 1027px;
+  margin: 0 auto;
   display: flex;
   gap: 70px;
   align-items: center;
@@ -359,10 +363,13 @@ main .patient-section {
 }
 .donation_buttons {
   display: grid;
-  grid-template: repeat(2, 80px) / repeat(3, 1fr) 2fr;
+  width: 90%;
+  grid-template-rows: repeat(2, 80px);
+  grid-template-columns: repeat(auto-fit, 160px);
   gap: 70px;
   justify-items: start;
   align-items: center;
+  justify-content: center;
 }
 .donation_buttons button {
   background-color: var(--donation-button-color);
