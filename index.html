@@ -21,7 +21,7 @@
       <div class="bg-img">
         <img src="./Image/Vector 1.svg" alt="" />
       </div>
-      <header>
+      <header class="nav">
         <div class="img_container">
           <span>CalCare</span>
           <img src="./Image/Group 6.svg" alt="Logo" />
@@ -203,7 +203,14 @@
               <button type="button">$200</button>
               <button type="button">$500</button>
               <button type="button">$1000</button>
-              <button type="button" class="other-amount">Other amount</button>
+              <select name="amount" id="amount" required>
+                <option value="0">Other Amount</option>
+                <option value="1">$10000</option>
+                <option value="2">$20000</option>
+                <option value="3">$50000</option>
+                <option value="4">$100000</option>
+                <option value="5">$1000000</option>
+              </select>
             </div>
           </div>
         </div>
@@ -268,4 +275,6 @@
       </footer>
     </div>
   </body>
+
+  <script src="./main.js"></script>
 </html>

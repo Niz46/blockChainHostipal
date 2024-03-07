@@ -9,7 +9,7 @@
 }
 
 :root {
-  --purple-color: #41006a;
+  --purple-color: #40196D;
   --white-color: #ffff;
   --bg-color: #d9cce15e;
   --h1-color: #40196d;
@@ -43,8 +43,8 @@ header {
   z-index: 1000000;
 }
 
-header.active {
-  background: var(--bg-color);
+.nav.active {
+  background: var(--patient-light-color);
 }
 
 header span {
@@ -324,7 +324,7 @@ main .patient-record {
 }
 
 .donation_section {
-  padding: 164px 0;
+  padding: 12% 0;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -338,7 +338,7 @@ main .patient-record {
   color: var(--h1-color);
   font-weight: 600;
   font-size: 42px;
-  line-height: 36px;
+  line-height: 20px;
   text-align: center;
 }
 .donation-content {
@@ -346,7 +346,7 @@ main .patient-record {
   max-width: 1027px;
   margin: 0 auto;
   display: flex;
-  gap: 70px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -362,36 +362,44 @@ main .patient-record {
   left: -4%;
 }
 .bottom-bg {
-  bottom: 0;
+  bottom: -10%;
   right: 0;
 }
 .donation_buttons {
   display: grid;
-  width: 90%;
-  grid-template-rows: repeat(2, 80px);
+  width: 93%;
+  grid-template-rows: repeat(2, 85px);
   grid-template-columns: repeat(auto-fit, 160px);
-  gap: 70px;
-  justify-items: start;
+  gap: 50px;
   align-items: center;
-  justify-content: center;
 }
 .donation_buttons button {
   background-color: var(--donation-button-color);
   border: transparent;
-  padding: 28px 59px;
+  padding: 15px 0;
   border-radius: 10px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
 }
-.donation_buttons button:active,
-.donation_buttons button:last-child {
+
+.donation_buttons select{
+  width: 20em;
+  padding: 15px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--depart-color);
+  color: var(--white-color);
+}
+
+.donation_buttons button:hover{
   background-color: var(--h1-color);
   color: var(--white-color);
 }
 
 .footer {
   padding: 50px 10% 10px;
-  background: var(--text-color);
+  background: var(--depart-color);
   width: 100%;
   color: var(--white-color);
   margin-bottom: 0;
@@ -409,7 +417,8 @@ footer .form{
 
 .email-signup input{
   width: 269px;
-  border: 1px solid var(--depart-color);
+  border: 1px solid var(--patient-light-color);
+  color: var(--white-color);
   border-radius: 7px;
   padding: 8px 10px;
   background: transparent;
@@ -417,7 +426,8 @@ footer .form{
 
 .email-signup button{
   padding: 8px 50px;
-  background: var(--depart-color); 
+  background: var(--purple-color); 
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: var(--white-color);
   border: none;
   border-radius: 7px;
