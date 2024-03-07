@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+:root {
+  --purple-color: #41006a;
+  --white-color: #ffff;
+  --bg-color: #d9cce15e;
+  --h1-color: #40196d;
+  --depart-color: #41006a;
+  --depart-blur-color: #41006a12;
+  --patient-color: #530485e0;
+  --patient-light-color: #d9cce1;
+}
+
