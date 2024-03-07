@@ -17,6 +17,7 @@
   --depart-blur-color: #41006a12;
   --patient-color: #530485e0;
   --patient-light-color: #d9cce1;
+  --donation-button-color: #cbcbcb;
   --text-color: #612b83;
   --blur-color: #00000075;
 }
@@ -320,6 +321,72 @@ main .patient-record {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.donation_section {
+  padding: 164px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.donation-content h3 {
+  color: var(--h1-color);
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 36px;
+  text-align: center;
+}
+.donation-content {
+  width: 100%;
+  max-width: 1027px;
+  margin: 0 auto;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.donation_section img {
+  position: absolute;
+  z-index: -1;
+}
+
+.top-bg {
+  top: 0;
+  left: -4%;
+}
+.bottom-bg {
+  bottom: 0;
+  right: 0;
+}
+.donation_buttons {
+  display: grid;
+  width: 90%;
+  grid-template-rows: repeat(2, 80px);
+  grid-template-columns: repeat(auto-fit, 160px);
+  gap: 70px;
+  justify-items: start;
+  align-items: center;
+  justify-content: center;
+}
+.donation_buttons button {
+  background-color: var(--donation-button-color);
+  border: transparent;
+  padding: 28px 59px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.donation_buttons button:active,
+.donation_buttons button:last-child {
+  background-color: var(--h1-color);
+  color: var(--white-color);
 }
 
 .footer {
