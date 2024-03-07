@@ -324,31 +324,58 @@ main .patient-record{
 }
 
 .footer {
-  padding: 50px 15% 10px;
+  padding: 50px 10% 10px;
   background: var(--text-color);
   width: 100%;
   color: var(--white-color);
   margin-bottom: 0;
 }
 
+footer .form{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.email-signup input{
+  width: 269px;
+  border: 1px solid var(--depart-color);
+  border-radius: 7px;
+  padding: 8px 10px;
+  background: transparent;
+}
+
+.email-signup button{
+  padding: 8px 50px;
+  background: var(--depart-color); 
+  color: var(--white-color);
+  border: none;
+  border-radius: 7px;
+  margin-left: 12px;
+}
+
 .footer .icons {
   font-size: 19px;
   font-weight: 400;
   display: flex;
-  margin-bottom: 30px;
+  margin-top: 35px;
   align-items: center;
 }
 
 .footer .icons img {
-  width: 30px;
-  margin: 0 10px;
+  width: 25px;
+  margin: 0 2px;
   opacity: 0.6;
 }
 
 .footer .col {
   flex-basis: 25%;
   flex-grow: 1;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .footer .col a {
@@ -375,6 +402,6 @@ main .patient-record{
 
 .copyright-text {
   font-size: 15px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0;
+  text-align: center;
 }
