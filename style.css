@@ -488,8 +488,8 @@ footer .form {
 .form-box {
   width: 380px;
   height: 530px;
-  position: absolute;
-  top: 2%;
+  position: fixed;
+  top: 10.2%;
   right: 5%;
   background: var(--patient-light-color);
   padding: 10px;
@@ -578,4 +578,8 @@ form span {
 #register input {
   color: var(--white-color);
   font-size: 15;
+}
+
+.click,#accountArea,#contractArea,#dataArea{
+  display: none;
 }

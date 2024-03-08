@@ -121,7 +121,18 @@
             <input type="checkbox" class="check-box" /><span
               >I agree to the terms and conditions</span
             >
-            <button type="submit" class="submit-btn">Register</button>
+            <button
+              type="submit"
+              class="submit-btn"
+              onclick="connectMetamask()"
+            >
+              Register
+            </button>
+            <p id="accountArea"></p>
+            <button onclick="connectContract()" class="click">CONNECT TO CONTRACT</button>
+            <p id="contractArea"></p>
+            <button onclick="readContract()" class="click">GET DATA FROM CONTRACT</button>
+            <p id="dataArea"></p>
           </form>
         </div>
       </div>
