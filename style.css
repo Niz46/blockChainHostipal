@@ -603,6 +603,7 @@ main .exchange-section{
   font-size: 36px;
   color: var(--depart-color);
   margin-top: 10px;
+  text-align: center;
 }
 
 .exchange-container .exchange{
