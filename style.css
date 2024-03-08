@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 main {
   width: 100%;
-  height: 210em;
+  height: 265em;
 }
 
 main .hero-section {
@@ -582,4 +582,41 @@ form span {
 
 .click,#accountArea,#contractArea,#dataArea{
   display: none;
+}
+
+main .exchange-section{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  padding: 40px 0;
+  background: var(--patient-light-color);
+}
+
+.exchange-container{
+  width: 80%;
+  margin: 30px 0;
+}
+
+.exchange-section h1{
+  font-size: 36px;
+  color: var(--depart-color);
+  margin-top: 10px;
+}
+
+.exchange-container .exchange{
+  height: 120.62px;
+  background: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 20px 0;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: ease-in-out .9s;
+}
+
+.exchange-container .exchange:hover{
+  background: #CEE4E9;
 }
